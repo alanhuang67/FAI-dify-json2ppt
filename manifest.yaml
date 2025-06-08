@@ -1,0 +1,36 @@
+version: 0.0.1
+type: plugin
+author: alanhuang
+name: fai-dify-json2ppt
+label:
+  en_US: FAI - JSON TO PPTX
+  zh_Hans: FAI - JSON 转 PPTX
+description:
+  en_US: Convert slide definitions written in JSON into a PowerPoint file
+  zh_Hans: 将用 JSON 格式描述的投影片结构转换为 PowerPoint 文件
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    model:
+      enabled: false
+    endpoint:
+      enabled: false
+    app:
+      enabled: false
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/fai-dify-json2ppt.yaml
+meta:
+  version: 0.0.1
+  arch: [amd64, arm64]
+  runner:
+    language: python
+    version: "3.11"
+    entrypoint: main
+created_at: 2025-06-07T14:19:51.347832Z

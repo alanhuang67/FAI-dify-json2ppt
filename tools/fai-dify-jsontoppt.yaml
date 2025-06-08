@@ -1,0 +1,56 @@
+identity:
+  name: fai_dify_jsontoppt
+  author: alanhuang
+  label:
+    en_US: FAI - JSON TO PPTX
+    zh_Hans: FAI - JSON 转 PPTX
+description:
+  human:
+    en_US: Convert slide definitions written in JSON into a PowerPoint file
+    zh_Hans: 将用 JSON 格式描述的投影片结构转换为 PowerPoint 文件
+  llm: Convert JSON slide data to PPTX
+parameters:
+  - name: slides_json
+    type: string
+    required: true
+    label: 
+      en_US: Slides JSON
+      zh_Hans: JSON格式的PPT内容
+    human_description:
+      en_US: Complete JSON describing all slides, layouts and placeholders
+      zh_Hans: 描述全部投影片、版式及占位符的完整 JSON 字符串
+    form: llm
+  - name: file_name
+    type: string
+    required: true
+    label:
+      en_US: Output File Name
+      zh_Hans: 输出文件名
+    human_description:
+      en_US: PPTX file name (e.g. AI_Roadmap.pptx)
+      zh_Hans: 生成的 PPTX 文件名（如 AI_Roadmap.pptx）
+    form: llm
+  - name: template_name
+    type: string
+    required: false
+    label:
+      en_US: Template File (optional)
+      zh_Hans: 模板文件名（可选）
+    human_description:
+      en_US: Optional path to a .pptx template; leave blank to use default
+      zh_Hans: 可选：PPTX 模板路径；留空则使用默认模板
+    form: form
+
+outputs:
+  - name: file_url
+    type: file
+    required: true
+    label:
+      en_US: PPTX File
+      zh_Hans: PPTX 文件
+    description:
+      en_US: Download link of the generated PPTX
+      zh_Hans: 生成的 PPTX 文件下载链接
+extra:
+  python:
+    source: tools/fai_dify_jsontoppt.py
