@@ -125,3 +125,5 @@ Note: This plugin is currently under review for Dify Marketplace. In the meantim
   ]
 }
 ```
+
+## Contact: alan.huang67@gmail.com
