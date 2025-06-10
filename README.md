@@ -27,6 +27,10 @@ The `fai-dify-json2ppt` plugin for Dify is designed to convert structured JSON d
 3.  **Install:** Click the "Install" button to add the plugin to your workspace.
 4.  **Configure:** The plugin will be automatically configured and ready to use in your applications.
 
+Note: This plugin is currently under review for Dify Marketplace. In the meantime, you can download the latest release package (.difypkg) and install it locally by:
+1. Download the .difypkg file from the releases page
+2. Set FORCE_VERIFYING_SIGNATURE=false in your .env file
+3. Install the package locally through Dify's plugin management interface
 
 ## JSON EXAMPLE
 
