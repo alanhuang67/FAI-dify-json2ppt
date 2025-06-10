@@ -27,40 +27,8 @@ The `fai-dify-json2ppt` plugin for Dify is designed to convert structured JSON d
 3.  **Install:** Click the "Install" button to add the plugin to your workspace.
 4.  **Configure:** The plugin will be automatically configured and ready to use in your applications.
 
----
 
-# JSON 到 PPTX Dify 插件
-
-## 简介
-
-Presented by Fantasy AI Studio!
-
-`fai-dify-json2ppt` 是一个基于 python-pptx 开发的 Dify 插件，旨在帮助用户将结构化的 JSON 数据转换为精美的 PowerPoint 演示文稿（PPTX 文件）。通过简单的 JSON 定义，您可以快速生成多页的、包含标题和内容的投影片。
-
-## 功能特性
-
-*   **JSON 格式优势:** 相比 Markdown，JSON 格式能够精确控制演示文稿的布局和格式，确保生成专业、美观的投影片。
-*   **模板灵活性:** 插件提供两个内置模板：`default.pptx` (默认使用) 和 `FAI.pptx`。您也可以使用自己的自定义 PPTX 模板以保持品牌一致性。
-*   **自定义模板支持:** 将 PPTX 模板文件放置在插件的 `templates` 目录中，并在插件节点配置中指定模板名称。
-
-**重要提示:**
-*   JSON 格式必须严格正确 - 任何语法错误都会导致演示文稿生成失败。
-*   布局名称和占位符键名必须与模板结构完全匹配。
-*   文本内容中的换行需要使用 `\\n` 转义。如果不需要文本框顶部出现空行，请避免在文本内容开头使用 `\\n`。
-*   列表项中支持 Markdown 格式（如 `**加粗**`）。
-*   为避免列表中产生不必要的 PPT 空行，请确保起始中括号 `[` 与第一个列表项在同一行，结束中括号 `]` 与最后一个列表项在同一行。
-*   自定义模板需要放置在插件的 `templates` 目录中，并在插件节点设置中指定使用。
-
-## 安装与部署
-
-1.  **访问 Dify 应用市场:** 进入您工作区的 Dify 应用市场。
-2.  **查找插件:** 搜索 "JSON to PPTX" 或 "fai-dify-json2ppt"。
-3.  **安装:** 点击"安装"按钮将插件添加到您的工作区。
-4.  **配置:** 插件将自动配置并可在您的应用中直接使用。
-
-## JSON 示例
-
-以下是完整的 JSON 格式示例，展示了所有支持的投影片布局及其定义方式：
+## JSON EXAMPLE
 
 ```json
 {
