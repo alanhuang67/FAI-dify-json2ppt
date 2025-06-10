@@ -27,6 +27,11 @@ Presented by Fantasy AI Studio!
 3.  **安装:** 点击"安装"按钮将插件添加到您的工作区。
 4.  **配置:** 插件将自动配置并可在您的应用中直接使用。
 
+注意：本插件正在申请加入 Dify Marketplace。在此期间，您可以通过以下方式下载并使用最新版本：
+1. 从 releases 页面下载 .difypkg 文件
+2. 在 .env 文件中设置 FORCE_VERIFYING_SIGNATURE=false
+3. 通过 Dify 的插件管理界面进行本地安装
+
 ## JSON 示例
 
 以下是完整的 JSON 格式示例，展示了所有支持的投影片布局及其定义方式：
